@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node:
+    container_name: txrx-redis-devel
+    build:
+      context: .
+    volumes:
+      - ./:/usr/src/app
+    env_file:
+      - .env
