@@ -40,6 +40,9 @@ syntax:
 lint:
 	docker compose exec node npm run lint -- --fix
 
+coverage: jest
+	open coverage/lcov-report/index.html
+
 rebuild: clear build install
 
 .SUFFIXES:
