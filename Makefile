@@ -2,6 +2,12 @@ PROJECT_NAME := txrx-redis
 
 MAKEFLAGS += --always-make
 
+GIT_NAME := $(shell git config --get user.name)
+GIT_EMAIL := $(shell git config --get user.email)
+
+export GIT_NAME
+export GIT_EMAIL
+
 build: 
 	docker compose build
 
@@ -20,6 +26,20 @@ clear_all:
 logs:
 	docker compose logs -f -t
 
-restart: clear build install
+shell:
+	docker compose exec -it node bash
+
+test: jest syntax
+
+jest:
+	docker compose exec node npm run test
+
+syntax:
+	docker compose exec node npm run lint
+
+lint:
+	docker compose exec node npm run lint -- --fix
+
+rebuild: clear build install
 
 .SUFFIXES:

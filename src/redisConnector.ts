@@ -1,5 +1,5 @@
 import Redis from 'ioredis';
-import { RedisConnection} from '../types/redis.types';
+import { RedisConnection } from '../types/redis.types';
 
 export default class RedisConnector {
     private static instances: { [key:string]: RedisConnector } = {};
@@ -12,7 +12,7 @@ export default class RedisConnector {
             RedisConnector.instances[category] = new RedisConnector();
         }
 
-        return RedisConnector.instances[category];
+        return RedisConnector.instances[category]; 
     }
 
     public get(url: string): Redis {

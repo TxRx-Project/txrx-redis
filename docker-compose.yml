@@ -1,10 +1,17 @@
 version: '3'
 services:
   node:
-    container_name: txrx-redis-devel
+    container_name: txrx-redis-node
+    image: txrx/redis-node:devel
     build:
       context: .
+      args:
+        GIT_NAME: ${GIT_NAME}
+        GIT_EMAIL: ${GIT_EMAIL}
     volumes:
       - ./:/usr/src/app
+      - $SSH_AUTH_SOCK:$SSH_AUTH_SOCK
+    environment:
+      - SSH_AUTH_SOCK=$SSH_AUTH_SOCK
     env_file:
       - .env
