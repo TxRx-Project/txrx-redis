@@ -6,7 +6,7 @@ A simple `Redis` connection pool implementation.
 
 The pool is structured as a `category`, `url` tuple.
 
-Where the category is an arbitrary string and the url is a valid Redis URL connection.
+Where the category is an arbitrary string and the url is a valid Redis URL connection string.
 
 ```typescript
 // local redis instance for streaming purposes
