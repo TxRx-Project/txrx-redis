@@ -46,6 +46,7 @@ coverage: jest
 rebuild: clear build install
 
 publish:
+	docker compose exec node npx tsc
 	docker compose exec node npm publish
 
 .SUFFIXES:

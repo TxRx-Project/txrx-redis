@@ -1,6 +1,6 @@
 {
   "name": "@txrx/redis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TxRx - Redis Connector",
   "author": "klez",
   "main": "dist/index.js",
@@ -25,6 +25,14 @@
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   },  
+  "files": [
+    "src/", 
+    "dist/", 
+    "types/",
+    "README.md", 
+    "package.json", 
+    "index.ts"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
