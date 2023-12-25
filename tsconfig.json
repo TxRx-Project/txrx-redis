@@ -18,5 +18,5 @@
     "typeRoots": ["./node_modules/@types"]
   },
   "include": ["./src/**/*", "./tsconfig.json", "./*"],
-  "exclude": ["node_modules", "dist", "**/__mocks__*", "**/*.spec.**", "test", "assets"]
+  "exclude": ["node_modules", "dist", "test", "coverage"]
 }

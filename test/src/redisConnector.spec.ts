@@ -1,4 +1,3 @@
-
 jest.mock('ioredis', () => require('ioredis-mock'));
 
 import Redis from 'ioredis';

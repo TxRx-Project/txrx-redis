@@ -1,8 +1,8 @@
 version: '3'
 services:
   node:
-    container_name: txrx-redis-node
-    image: txrx/redis-node:devel
+    container_name: txrx-redis-pool-node
+    image: txrx/redis-pool-node:devel
     build:
       context: .
       args:

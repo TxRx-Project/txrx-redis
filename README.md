@@ -1,4 +1,4 @@
-# txrx-redis
+# txrx-redis-pool
 
 A simple `Redis` connection pool implementation.
 
