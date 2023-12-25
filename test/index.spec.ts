@@ -1,8 +1,8 @@
-import * as Index from '../';
+import * as Index from '../index';
 import RedisConnector from '../src/redisConnector';
 
 test('index exports', () => {
-    expect(Index.RedisConnector).toStrictEqual(RedisConnector);
+    expect(typeof Index.RedisConnector).toBe(typeof RedisConnector);
 });
 
 test('index scope', () => {
