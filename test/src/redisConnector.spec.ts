@@ -4,7 +4,7 @@ import Redis from 'ioredis';
 
 import RedisConnector from "../../src/redisConnector";
 
-describe('RedisConnector', () => {
+describe('The RedisConnector class', () => {
     let conn1: RedisConnector;
     let conn2: RedisConnector;
     let conn3: RedisConnector;
