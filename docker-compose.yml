@@ -3,6 +3,7 @@ services:
   node:
     container_name: txrx-redis-pool-node
     image: txrx/redis-pool-node:devel
+    user: "${UID}:${GID}"
     build:
       context: .
       args:
