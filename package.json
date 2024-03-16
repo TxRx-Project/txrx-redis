@@ -1,9 +1,10 @@
 {
   "name": "@txrx/redis-pool",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TxRx - Redis Pool Connector",
   "author": "klez",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "ISC",
   "scripts": {
     "test": "jest",

@@ -6,3 +6,8 @@ import { Redis } from 'ioredis';
 export type RedisConnection = {
     [key: string]: Redis;
 };
+
+/**
+ * A proxy symbol for the for {@link RedisConnection}.
+ */
+export const RedisConnection = Symbol('RedisConnection');
